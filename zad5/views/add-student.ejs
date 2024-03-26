@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>ADD-STUDENT</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/add-student">Add student</a></li>
+                <li><a href="/students">Students</a></li>
+                <li><a href="/courses">Courses</a></li>
+                <li><a href="/courses/add">Add course</a></li>
+            </ul>
+        </nav>
+        <form action="/student" method="POST">
+            <label for="firstname">Imię :</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="lastname">Nazwisko :</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="studyField">Kierunek :</label>
+            <input type="text" name="studyField" id="studyField">
+            <input type="submit">
+        </form>
+    </body>
+</html>

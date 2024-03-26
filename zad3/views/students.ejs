@@ -1,0 +1,10 @@
+<html>
+    <head><title>STUDENTS</title></head>
+    <body>
+        <ul>
+            <% students.forEach(function(student){ %>
+                <li><%= student.firstname %>  <%= student.lastname %> - <%= student.studyField %></li>
+            <%  }); %>
+        </ul>
+    </body>
+</html>

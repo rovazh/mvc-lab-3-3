@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>STUDENTS</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/add-student">Add student</a></li>
+                <li><a href="/students">Students</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <% students.forEach(function(student){ %>
+                <li><%= student.firstname %>  <%= student.lastname %> - <%= student.studyField %></li>
+            <%  }); %>
+        </ul>
+    </body>
+</html>
